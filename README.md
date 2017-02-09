@@ -16,3 +16,5 @@ apkpatch -f 2.apk -t 1.apk -o output1 -k qiushi.jks -p 123456 -a qiushi -e 12345
 apkpatch -f new.apk -t old.apk -o output1 -k 签名文件 -p 签名密码 -a 机构名 -e 机构签名密码
 
 如无错误，编译后会生成一个apatch文件，改名成out.apatch
+
+adb push E:\android_fix\patch_file\out.apatch /sdcard/
